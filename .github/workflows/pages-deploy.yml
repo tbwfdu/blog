@@ -46,9 +46,10 @@ jobs:
 
       - name: Test site
         run: |
-          bundle exec htmlproofer _site \
+          bundle exec htmlproofer _site/blog \
             --disable-external \
-            --swap-urls "^/blog/:/,^/blog$:/" \
+            --root-url "https://dropbearlabs.net" \
+            --swap-urls "^/blog/:/,^https://dropbearlabs.net/blog/:/" \
             --ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
 
       - name: Upload site artifact
