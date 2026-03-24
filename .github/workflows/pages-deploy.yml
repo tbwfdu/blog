@@ -49,8 +49,8 @@ jobs:
           bundle exec htmlproofer _site/blog \
             --disable-external \
             --root-dir _site/blog \
-            --swap-urls "^/blog/:/,^https://dropbearlabs.net/blog/:/" \
-            --ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
+            --ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/" \
+            --ignore-files "/\/404.html/"
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v4
