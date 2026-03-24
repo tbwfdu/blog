@@ -1,0 +1,37 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+body, p, span {
+  font-family: 'Inter', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif !important;
+}
+
+h1 {
+  font-weight: 500 !important;
+}
+
+.site-title {
+  font-weight: 700 !important;
+  font-size: 1.25rem !important;
+  letter-spacing: 0em !important;
+}
+
+.site-subtitle {
+  font-style: normal !important;
+}
+
+code, pre, kbd, samp {
+  font-family: 'JetBrains Mono', monospace !important;
+}

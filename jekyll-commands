@@ -1,0 +1,13 @@
+
+//New Post
+bundle exec jekyll post "My Awesome New Post"
+
+//New Draft
+bundle exec jekyll draft "My Awesome New Draft"
+
+//Publish a Draft
+bundle exec jekyll publish _drafts/my-new-idea.md
+
+//Load Jekyll with Drafts
+bundle exec jekyll serve --livereload --drafts
+
